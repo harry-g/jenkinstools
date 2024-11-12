@@ -5,6 +5,8 @@ The idea of this project is to help Jenkins admins and pipeline developer in dai
 
 Multibranch is used differently here: each branch is a separate tool that you can use. This way you just reference this repo and you have all tools handy as single tool jobs in "branches".
 
+⚠️ These tools are very powerful and can **delete jobs or mess up Jenkins or job configuratiosn completely**! Compare it to Jenkins script console. **By using this project you agree to use it at your own risk** and you should **only give Jenkins admins access** to these tool jobs. 
+
 ## Setup
 Just configure a multibranch job on this repo (more detailed hints to be documented). Then every branch will run a build. First run will usually fail as Jenkins needs to parse the Jenkinsfile and e.g. create build parameters. 
 
