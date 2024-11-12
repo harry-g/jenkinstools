@@ -12,7 +12,7 @@ Multibranch is used differently here: each branch is a separate tool that you ca
 ## Setup
 Just configure a multibranch job on this repo (more detailed hints to be documented). Then every branch will run a build. First run will usually fail as Jenkins needs to parse the Jenkinsfile and e.g. create build parameters. 
 
-The project runs without changes if at leats one Linux and Windows agent is labeled with "OS:Linux" and "OS:Windows". Otherwise see section configuration below.
+The project runs without changes if at least one Linux and Windows agent is labeled with "OS:Linux" and "OS:Windows" and if safe html is enabled as markup formatter. Otherwise see section configuration below.
 
 Furthermore, many scripts will need many script approvals (page "in-process script approvals"). There are several ways to handle this. See https://plugins.jenkins.io/script-security as a starting point and https://plugins.jenkins.io/permissive-script-security/ as a possible, but less secure solution.
 
