@@ -1,7 +1,9 @@
 # Jenkinstools
-Welcome to Jenkinstools. This is a collection of tools and maintainance jobs for Jenkins. 
+Welcome to Jenkinstools. This is a collection of tools and maintainance jobs for Jenkins development, operation and administration. 
 
-The idea of this project is to help Jenkins admins and pipeline developer in daily life. Unlike many plugins focused on job level results, we are more focused on Jenkins housekeeping on job, controller and agent level - and without developing tons of new plugins as we already have too many. Many tasks can just be done in a build job instead of a plugin. This are the ideas where this project starts from.
+🚧 This is still work in progress - you can watch the progress below in the implemented/backlog section and you are welcome to help. 
+
+The idea of this project is to help Jenkins admins and pipeline developers in daily life. Unlike many plugins focused on job level results, we are more focused on Jenkins housekeeping on job, controller and agent level - and without developing tons of new plugins as we already have too many. Many tasks can just be done in a build job instead of a plugin. This are the ideas where this project starts from.
 
 Multibranch is used differently here: each branch is a separate tool that you can use. This way you just reference this repo and you have all tools handy as single tool jobs in "branches".
 
@@ -49,4 +51,3 @@ Each branch has a more detailed readme as well as help text in the job descripti
 * Report pipeline libraries and their usage
 * Report tool usage (like JDK or Maven etc. sorted by versions)
 * Report all SCM trigger configurations (e.g. cron expression)
-* 
