@@ -12,7 +12,7 @@ Just configure a multibranch job on this repo (more detailed hints to be documen
 
 The project runs without changes if at leats one Linux and Windows agent is labeled with "OS:Linux" and "OS:Windows". Otherwise see section configuration below.
 
-Furthermore, many scripts will need many script approvals (page "in-process script approvals"). There are several ways to handle this. See https://plugins.jenkins.io/script-security as a starting point.
+Furthermore, many scripts will need many script approvals (page "in-process script approvals"). There are several ways to handle this. See https://plugins.jenkins.io/script-security as a starting point and https://plugins.jenkins.io/permissive-script-security/ as a possible, but less secure solution.
 
 After that, the tools are ready to use and some will run nightly (all fast and with low resource consumption).
 
