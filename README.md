@@ -37,12 +37,12 @@ Each branch has a more detailed readme as well as help text in the job descripti
 * Log search - find text in all build logs of a job/folder
 * Rebuild range of (e.g. failed) build runs (with original parameters if any)
 * Reload config from disk for single jobs or folders
-* Create disk usage report for Linux nodes
 * Clean workspace of all/selected agents
 * Clean orphan workspaces on all agents
 * Clean Gradle cache of all/selected agents
 * Delete job(s) by folder and regex
 * Delete old build runs without starting a build (Trigger log rotation)
+* Report disk usage report for Linux controller and nodes
 * Report credentials - see all credentials in one place with link, also those from folders
 * Report all jobs with custom workspaces
 * Report all jobs with certain status (disabled, failing etc.)
