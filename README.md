@@ -1,52 +1,16 @@
-# Jenkinstools
-Welcome to Jenkinstools. This is a collection of tools and maintainance jobs for Jenkins. 
+# Disk Usage
+Report disk usage for Linux nodes.
 
-The idea of this project is to help Jenkins admins and pipeline developer in daily life. Unlike many plugins focused on job level results, we are more focused on Jenkins housekeeping on job, controller and agent level - and without developing tons of new plugins as we already have too many. Many tasks can just be done in a build job instead of a plugin. This are the ideas where this project starts from.
+o use the results:
 
-Multibranch is used differently here: each branch is a separate tool that you can use. This way you just reference this repo and you have all tools handy as single tool jobs in "branches". Yes, it is a matter of taste and branches are unusually used, designed to never be merged and you can see it as abuse - but it works and is a pragmatic solution. Try it!
+    download the ZIP file
+    drop it on your TKDU installation (see below)
+    left-click to enter details
+    right-click to go one level up
 
-⚠️ These tools are very powerful and can **delete jobs or mess up Jenkins or job configuratiosn completely**! Compare it to Jenkins script console. **By using this project you agree to use it at your own risk** and you should **only give Jenkins admins access** to these tool jobs. 
+To install TKDU for Windows:
 
-## Setup
-Just configure a multibranch job on this repo (more detailed hints to be documented). Then every branch will run a build. First run will usually fail as Jenkins needs to parse the Jenkinsfile and e.g. create build parameters. 
-
-The project runs without changes if at leats one Linux and Windows agent is labeled with "OS:Linux" and "OS:Windows". Otherwise see section configuration below.
-
-Furthermore, many scripts will need many script approvals (page "in-process script approvals"). There are several ways to handle this. See https://plugins.jenkins.io/script-security as a starting point and https://plugins.jenkins.io/permissive-script-security/ as a possible, but less secure solution.
-
-After that, the tools are ready to use and some will run nightly (all fast and with low resource consumption).
-
-## Configuration
-If you want to modify tools to your needs like different labels or cron schedules, just fork the repo. Please _do not file PRs for such changes_, but only for changes that are generic or parameterizable and useful for everybody.
-
-It is planned to add also config possibilities outside the source code like global env variables or a global config file.
-
-## Usage
-Each branch offers a tool that can just be triggered as build run with according parameters.
-
-Each branch has a more detailed readme as well as help text in the job description and in the parameters.
-
-## Implemented Tools
-* none yet
-
-## Planned Tools Backlog
-* Job config search - find any text in job configuration (config.xml) of a job/all jobs in a folder
-* Pipeline code search - find any text for all jobs in a folder in last used pipeline scripts (no matter if in Jenkinsfile or UI)
-* Log search - find text in all build logs of a job/folder
-* Rebuild range of (e.g. failed) build runs (with original parameters if any)
-* Reload config from disk for single jobs or folders
-* Create disk usage report for Linux nodes
-* Clean workspace of all/selected agents
-* Clean orphan workspaces on all agents
-* Clean Gradle cache of all/selected agents
-* Delete job(s) by folder and regex
-* Delete old build runs without starting a build (Trigger log rotation)
-* Report credentials - see all credentials in one place with link, also those from folders
-* Report all jobs with custom workspaces
-* Report all jobs with certain status (disabled, failing etc.)
-* Report existing build runs (e.g. over certain number, kept forever and/or without description)
-* Report all label usage in jobs
-* Report pipeline libraries and their usage
-* Report tool usage (like JDK or Maven etc. sorted by versions)
-* Report all SCM trigger configurations (e.g. cron expression)
-* 
+    install Python using .py files as executable - now you can directly drag and drop the zip file on tkdu.py
+    or install Python portable, for Windows: make a link of pythonw, edit the link properties and add 'yourPath/tkdu.py' as parameter - now you can directly drag and drop the zip file on pythonw link
+    Python 2: get tkdu.py from here, use Python >=2.7.15
+    Python 3: get tkdu from here use any Python 3.x
