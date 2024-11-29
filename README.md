@@ -40,8 +40,9 @@ Each branch has a more detailed readme as well as help text in the job descripti
 * Clean workspace of all/selected agents
 * Clean orphan workspaces on all agents
 * Clean Gradle cache of all/selected agents
+* Clean build runs as configured without starting a build (Trigger log rotation)
+* Clean build runs with certain conditions like failed ones etc.
 * Delete job(s) by folder and regex
-* Delete old build runs without starting a build (Trigger log rotation)
 * Report disk usage report for Linux controller and nodes
 * Report credentials - see all credentials in one place with link, also those from folders
 * Report all jobs with custom workspaces
